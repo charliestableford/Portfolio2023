@@ -1,11 +1,380 @@
 $mustard: #FFD646;
+$lightMustard: #FFE175;
+$white: #fff;
 $black: #000;
-
+$salmon: #FE5F55;
+$pink: #E63462;
+$purple: #8075FF;
+$blue: #043CFF;
+$modak: 'Modak', sans-serif;
+$headerText: 1.5rem;
+$nameText: 6rem;
+$bodyText: 1.3rem;
 
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0; 
-    //font-family: $mon;
+    line-height: 2rem;
 }
+
+.flex{
+  display: flex;
+}
+
+//HOME
+a:focus, button:focus{
+    outline-width: 2px;
+    outline-style: dashed;
+    outline-color:$blue;
+}
+
+body{
+    background-color: $mustard;
+}
+
+.mainContainer{
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+}
+
+header>ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.mainName{
+    font-family: $modak;
+    color: $white;
+    font-size: $nameText;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $black;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.pronoun{
+    color: $black;
+    font-family: Helvetica;
+    font-size: $headerText;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-left: 1rem;
+}
+.cta{
+    margin-right: 1rem;
+}
+
+.cta>a{
+    color: $white;
+    font-family: Helvetica;
+    font-size: $headerText;
+    font-style: normal;
+    font-weight: 700;
+    background-color: $black;
+    line-height: normal;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 188px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    border: none;
+}
+
+li{
+    list-style: none;
+}
+
+.slogan{
+    font-family: Helvetica;
+    font-size: $headerText;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: $black;
+    text-align: center;
+}
+
+.title{
+    font-family: Helvetica;
+    font-size: $headerText;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: $black;
+    margin-left: 1rem;
+}
+
+.dottedLine{
+    border-top: 2px dashed $black;
+    border-bottom: none;
+    height: 2px;
+    background-color: $mustard;
+    // margin-top: 5rem;
+}
+
+.mainTitles{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    font-size: $bodyText;
+    font-family: Helvetica;
+}
+
+.tags{
+    display: flex;
+    flex-basis: max-content;
+    margin-bottom: 1rem;
+}
+
+.tags>li{
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    text-orientation: mixed;
+    font-family: Helvetica;
+    font-size: $bodyText;
+    border-right: 1px solid $black;
+    border-top: 1px solid $black;
+    padding-left: 3.4rem;
+    padding-right: 3.4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.tags>li:hover{
+  background: $lightMustard;
+}
+.hightlight{
+  background-color: $salmon;
+}
+
+.tags>li:last-child {
+    border-left: 1px solid $black;
+}
+
+li>a{
+    text-decoration: none;
+    color: $black;
+}
+
+.announcement-section {
+    position: relative;
+    overflow: visible;
+  }
+  .announcement-bar {
+    padding: 1.25rem 0px;
+    overflow: hidden;
+    width: 100%;
+    background: $salmon;
+    position: relative;
+    z-index: 0;
+  }
+  .marquee-container {
+    position: absolute;
+    overflow: hidden;
+    inset: 0;
+  }
+
+  .container-flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .marquee-item {
+    text-transform: uppercase;
+    font-family: Helvetica;
+    letter-spacing: 0.2rem;
+    color: $black;
+    animation: marquee 12s linear infinite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+  .marquee-stamp {
+    position: absolute;
+    top: -5.2rem;
+    right: 5rem;
+    z-index: 3;
+  }
+  .marquee-icon {
+    height: 4.2rem;
+    margin-bottom: 1rem;
+    // margin-right: 2rem;
+    position: absolute;
+    z-index: -1;
+    left: 13.5rem;
+    
+  }
+
+  .copy{
+    display: flex;
+    justify-content: right;
+    font-family: Helvetica;
+    font-size: 10px;
+  }
+
+  .spin-me {
+    animation: spin-me-right-round 12s linear infinite;
+    transform-origin: center center;
+  }
+
+  @keyframes spin-me-right-round {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  @keyframes marquee {
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  //ABOUT
+  .aboutFlexContainer{
+    display: flex;
+    justify-content: center;
+    background: $white;
+    padding-top: 3rem;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .aboutContainer{
+    width: 80%;
+    display: flex;
+  }
+
+  .leftColumn{
+    width: 50%;
+    font-family: helvetica;
+    padding-right: 10%;
+  }
+
+  .leftColumn > h1{
+    font-size: $headerText;
+    color: $purple;
+  }
+
+  .leftColumn > h2{
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .rightColumn{
+    width: 50%;
+    font-family: Helvetica;
+    line-height: 2rem;
+    font-size: $bodyText;
+  }
+
+  //LATEST WORK
+  .latestContainer{
+    display: flex;
+    justify-content: center;
+    background: $white;
+    padding-top: 3rem;
+    //margin-top: 2rem;
+    padding-bottom: 3rem;
+    //color: $white;
+    font-family: helvetica;
+  }
+
+  .latestHeader{
+    width: 80%;
+    color: $black;
+  }
+
+  .latestHeaderBtm{
+    width: 80%;
+    display: flex;
+  }
+
+  .capsHeader{
+    font-size: $headerText;
+    color: $purple;
+  }
+
+  .latestHeader > p{
+    font-size: $bodyText;
+  }
+
+  .threeColumns{
+    padding-right: 2rem;
+    color: $black;
+    font-size: $bodyText;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+
+  }
+
+  .marginSpacer{
+    margin-top: 1rem;
+  }
+
+  .flex1{
+    flex: 1;
+  }
+
+  .btmBtn{
+    margin-top: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-shrink: 0;
+    border-radius: 27px;
+    border: none;
+    font-family: Helvetica;
+    font-size: $bodyText;
+  }
+
+
+  .btmBtn:disabled,
+  .btmBtn[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.secondaryLink{
+  color: $salmon;
+}
+
+
+  @media(max-width: 960px){
+    .container{
+      width: 70%;
+  }
+
+  .mainName{
+    font-size: 86px;
+    margin-top: 2rem;
+  }
+  .tags>li{
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+}
+
+  

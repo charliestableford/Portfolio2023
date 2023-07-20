@@ -10,47 +10,126 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Playfair+Display:wght@400;700;800;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.png" />
     <title>Charlie Stableford Portfolio</title>
 </head>
 <body>
+    <div class="mainContainer flex">
+    <section class="containter">
     <header>
         <ul>
-            <li>UX Designer</li>
-            <li><button>Contact</button></li>
+            <li class="title">UX Designer</li>
+            <li class="cta btn"><a href= "mailto:charliestableford2@gmail.com" target="none" >Contact</a></li>
         </ul>
     </header>
     <section>
-        <div>
-            Charlie Stableford
-        </div>
-        <div>they/them</div>
-        <div>Take what you need</div>
+        <h1 class="mainName">
+            <img class="marquee-icon spin-me" src="img/heyThere.png" alt="hey there">
+            Charlie Stableford<span class="pronoun">they/them</span>
+        </h1>
+        <div class="slogan">Take what you need</div>
+    
     </section>
-    <section>
-        <div>
+    <section class="mainTitles">
+        <div class="workTitle">
             Work
         </div>
-        <div>
+        <div class="playTitle">
             Play
         </div>
-        <div>
+        <div class="aboutTitle">
             About
         </div>
     </section>
+    <hr noshade class="dottedLine">
     <section>
-        <ul>
-            <li>Latest work (work @ PwC 2021- Current)</li>
-            <li>Previous work </li>
-            <li>Case studies (from 2019-2020)</li>
-            <li>Artwork (Illustator, Photoshop)</li>
-            <li>CSS animations</li>
-            <li>About Charlie</li>
-            <li>Resume & Contact</li>
+        <ul class="tags">
+            <li class="workHighlight"><a href="#">Latest work </br> (work @ PwC 2021- Current)</a></li>
+            <li class="workHighlight"><a href="#">Previous work </a></li>
+            <li class="workHighlight"><a href="#">Case studies </br>(from 2019-2020)</a></li>
+            <li class="playHighlight"><a href="#">Artwork </br>(Illustator, Photoshop)</a></li>
+            <li class="playHighlight"><a href="#">CSS animations</a></li>
+            <li class="aboutHighlight"><a href="#aboutCharlie">About Charlie</a></li>
+            <li class="aboutHighlight"><a href="#">Resume & Contact</a></li>
         </ul>
     </section>
-</body>
-<footer>
-
+</section>     
+    </div>
+    <section class="aboutFlexContainer" id="aboutCharlie">
+        <div class="aboutContainer">
+        <div class="leftColumn">
+            <h1>
+                ABOUT CHARLIE
+            </h1>
+            <h2>
+                UX strategy, design, implementation with a background in psychology, fine arts and development.
+            </h2>
+        </div>
+        <div class="aboutBody rightColumn">
+            <p>
+                Hey! My name is Charlie and I am a UX and Product Designer living in Vancouer, BC. A large focus of my work within UX is accessibility. My approach to creation is to design for the few as opposed to the many, knowing that this will have the highest impact and be more usable for all.<br><br>
+            </p>
+            <p>
+            I have a small blind boston terrier named Poppy, a spouse named Marisa 🌈 and a baby named Ash. When I am not designing I am hiking, kayaking, cycling, cross country skiing and camping. <br><br> Previous to being a UX Designer I was an oil painter and I worked in galleries as a preparator creating spaces, and doing service design. 
+        </p>
+        </div>
+    </div>
+    </section>
+    <section class="latestContainer flex" id="latestCharlie">
+            <div class="latestHeader">
+                <h1 class="capsHeader">LATEST WORK</h1>
+                <h2>(work @ PwC to current)</h2>
+                <p>Highlighted case studies from my current work experience at PwC. To view any of this work please email me <a href= "mailto:charliestableford2@gmail.com" target="none" class="secondaryLink">@ charliestableford2@gmail.com</a> or <a href="https://www.linkedin.com/in/charlie-stableford/" target="none" class="secondaryLink">reach out through LinkedIn. </a></p>
+            </div>
+        </div>
+    </section>
+    <section class="latestContainer flex">
+        <div class="latestHeaderBtm">
+            <div class="threeColumns">
+                <h3>Strategy, research and redesign for a large Canadian chartiable non-profit.</h3>
+                <p class="marginSpacer">Duration: 2021-2022</p>
+                <p>Role: Lead Designer</p>
+                <p class="flex1">NRT</p>
+                <button disabled class="btmBtn">view project one</button>
+            </div>
+            <div class="threeColumns">
+                <h3>accessibility</h3>
+                <p class="marginSpacer">Duration: 2022-2023</p>
+                <p>Role: Lead Designer</p>
+                <p>Placeholder</p>
+                <button disabled class="btmBtn">view project two</button>
+            </div>
+            <div class="threeColumns">
+                <h3>Strategy, redesign, developer hand off and sprint integration work for a large Canadian non-profit.</h3>
+                <p class="marginSpacer">Duration: 2021-2023</p>
+                <p>Role: Lead Designer</p>
+                <p>Tarion</p>
+                <button disabled class="btmBtn">view project three</button>
+            </div>
+        
+    </div>
+    </section>
+        <footer>
+            <div class="announcement-bar nn-section">
+                <ul class="marquee-container container-flex-center">
+                  <li class="marquee-item">Say hey! I am down for virtual coffees.<span="coffee">☕</span></li>
+                  <li class="marquee-item">Say hey! I am down for virtual coffees.<span="coffee">☕</span></li>
+                  <li class="marquee-item">Say hey! I am down for virtual coffees.<span="coffee">☕</span></li>
+                  <li class="marquee-item">Say hey! I am down for virtual coffees.<span="coffee">☕</span></li>
+                  <li class="marquee-item">Say hey! I am down for virtual coffees.<span="coffee">☕</span></li>
+                  <li class="marquee-item">Say hey! I am down for virtual coffees.<span="coffee">☕</span></li>
+                  <li class="marquee-item">Say hey! I am down for virtual coffees.<span="coffee">☕</span></li>
+                </ul>
+                </div>
+                <!-- <div class="copy">
+                    <p class="copyright">Copyright <span class="date"></span></p>
+                </div> -->
 </footer>
+<!-- <script src="src/focus.js"></script> -->
+<script src="src/date.js"></script>
+</body>    
+
+
